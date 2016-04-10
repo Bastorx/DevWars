@@ -1,0 +1,21 @@
+{
+  "name": "BastienWebsite",
+  "version": "0.0.1",
+  "authors": [
+    "Bastien CHEVALLIER <cheval_b@etna-alternance.net>"
+  ],
+  "description": "Site Web Personnel de Bastien Chevallier",
+  "main": "app.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "blueimp-gallery": "~2.16.0",
+    "font-awesome": "~4.5.0",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6"
+  }
+}

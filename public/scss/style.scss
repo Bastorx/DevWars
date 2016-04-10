@@ -1,0 +1,14 @@
+$fa-font-path: "../components/font-awesome/fonts";
+$icon-font-path: "../components/bootstrap-sass/assets/fonts/bootstrap/";
+
+@import "../components/font-awesome/scss/font-awesome.scss";
+@import "../components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "partials/fonts";
+@import "partials/function";
+@import "partials/variable";
+@import "partials/general";
+@import "partials/color";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/home";

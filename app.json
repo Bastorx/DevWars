@@ -1,0 +1,22 @@
+{
+  "name": "Website",
+  "scripts": {
+  },
+  "env": {
+    "APP_NAME": {
+      "required": true
+    },
+    "BUILDPACK_URL": {
+      "required": true
+    },
+    "NODE_ENV": {
+      "required": true
+    },
+    "REAL_ENV": {
+      "required": true
+    }
+  },
+  "addons": [
+    "newrelic"
+  ]
+}
