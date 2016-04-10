@@ -24,7 +24,7 @@ var Html = React.createClass({
 		return (
 			<html lang="fr">
 				<head>
-					<title>Bastien Chevallier *Développeur*</title>
+					<title>DevWars</title>
 					<meta charSet="utf-8" />
 					<meta httpEquiv="Content-type" content="text/html; charset=UTF-8" />
 					<meta httpEquiv="Content-style-type" content="text/css" />

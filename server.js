@@ -65,13 +65,15 @@ server.use(function(req, res, next) {
 server.use(function(err, req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
-    next(err);
+    console.log(err);
+    res.write('<h1>404 Error</h1>');
+    res.end();
 });
 
 /// error handlers
 server.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    console.log(err.message);
+    console.log(err);
     res.write('<h1>Internal Server Error</h1>');
     res.end();
 });
