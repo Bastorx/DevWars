@@ -1,7 +1,6 @@
 'use strict';
 
 var React = require('react');
-var Link = require('../Link.jsx');
 var Header = require('./Header.jsx');
 var Footer = require('./Footer.jsx');
 

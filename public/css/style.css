@@ -8233,13 +8233,6 @@ button.close {
   font-style: normal; }
 
 @font-face {
-  font-family: 'vermin-vibes';
-  src: url("/fonts/vermin-vibes/vermin-vibes.eot");
-  src: url("/fonts/vermin-vibes/vermin-vibes.eot?#iefix") format("embedded-opentype"), url("/fonts/vermin-vibes/vermin-vibes.woff") format("woff"), url("/fonts/vermin-vibes/vermin-vibes.ttf") format("truetype"), url("/fonts/vermin-vibes/vermin-vibes.svg#Vermin-Vibes") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'outer-zone';
   src: url("/fonts/outer-zone/outer_zone-webfont.eot");
   src: url("/fonts/outer-zone/outer_zone-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/outer-zone/outer_zone-webfont.woff2") format("woff2"), url("/fonts/outer-zone/outer_zone-webfont.woff") format("woff"), url("/fonts/outer-zone/outer_zone-webfont.ttf") format("truetype"), url("/fonts/outer-zone/outer_zone-webfont.svg#outer_zoneregular") format("svg");
@@ -8397,6 +8390,9 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
   font-size: 6em;
   font-family: 'outer-zone';
   margin: 20px 0; }
+  @media screen and (max-width: 767px) {
+    .header h1 {
+      font-size: 2.6em; } }
 
 .header nav {
   background-color: #222;
