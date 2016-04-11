@@ -21,7 +21,7 @@ server.set('views', __dirname + '/components');
 server.set('view engine', 'jsx');
 server.engine('jsx', require('express-react-views').createEngine());
 
-server.use(favicon(__dirname + '/public/images/icons/transport.svg'));
+server.use(favicon(__dirname + '/public/images/icons/transportx32.png'));
 server.use(logger('dev'));
 server.use(cookieParser());
 

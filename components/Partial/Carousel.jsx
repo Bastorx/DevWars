@@ -6,7 +6,12 @@ var Gallery = require('./Gallery.jsx');
 var Picture = require('./Picture.jsx');
 
 module.exports = React.createClass({
-    getInitialState: function () {
+    getDefaultProps: function() {
+        return {
+            backgroundStyle: false
+        };
+    },
+    getInitialState: function() {
         return {
             openGallery: false,
             displayIndex: 0
@@ -19,7 +24,7 @@ module.exports = React.createClass({
             var cls = (i == this.state.displayIndex) ? "item active" : "item";
             return (
                 <div className={cls}>
-                    <Picture picture={picture} role={this.props.gallery ? "button" : ''} backgroundStyle={this.props.backgroundStyle || false} onClick={this.props.gallery ? this.openGallery : ''}/>
+                    <Picture picture={picture} role={this.props.gallery ? "button" : ''} backgroundStyle={this.props.backgroundStyle} onClick={this.props.gallery ? this.openGallery : ''}/>
                     {picture.title || picture.description ?
                         <div className="description">
                             <p className="title">{picture.title}</p>

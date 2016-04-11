@@ -6,20 +6,15 @@ var Carousel = require('./Partial/Carousel.jsx');
 
 var pictures = [
 	{
-		url: "http://www.monchiotetmoi.com/upload/images/bien-connaitre-mon-chien-pour-bien-le-nourrir.jpg",
-		title: "Chien",
-		description: "Ceci est un chien"
+		url: "/images/banner/1.png",
+		title: "Equipe",
+		description: "La DevWars compétition continue ! Cette semaine le combat en équipe sont mis en avant ! Alors GO GO GO !"
 	},
 	{
-		url: "http://media.virginradio.fr/article-2505914-fb-f1415609183/chat-mignon-petit-chaton-therapie-detente.jpg",
-		title: "Chat",
-		description: "Ceci est un petit chat mignon"
-	},
-	{
-		url: "https://az727346.vo.msecnd.net/content/images/hp1-steak.png",
-		title: "Steak",
-		description: "Ceci est un steak.... Miam"
-	},
+		url: "/images/banner/2.jpg",
+		title: "Problème technique",
+		description: "Certains problèmes techniques sont encore présent et notre équipe de développeur tente de les corrigers le plus vite possible"
+	}
 ];
 
 var Home = React.createClass({

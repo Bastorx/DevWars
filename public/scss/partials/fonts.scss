@@ -9,3 +9,28 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+@font-face {
+  font-family: 'vermin-vibes';
+  src: url('/fonts/vermin-vibes/vermin-vibes.eot');
+  src: url('/fonts/vermin-vibes/vermin-vibes.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/vermin-vibes/vermin-vibes.woff')  format('woff'),
+       url('/fonts/vermin-vibes/vermin-vibes.ttf')  format('truetype'),
+       url('/fonts/vermin-vibes/vermin-vibes.svg#Vermin-Vibes') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'outer-zone';
+    src: url('/fonts/outer-zone/outer_zone-webfont.eot');
+    src: url('/fonts/outer-zone/outer_zone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/outer-zone/outer_zone-webfont.woff2') format('woff2'),
+         url('/fonts/outer-zone/outer_zone-webfont.woff') format('woff'),
+         url('/fonts/outer-zone/outer_zone-webfont.ttf') format('truetype'),
+         url('/fonts/outer-zone/outer_zone-webfont.svg#outer_zoneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

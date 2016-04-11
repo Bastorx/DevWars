@@ -8232,6 +8232,20 @@ button.close {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'vermin-vibes';
+  src: url("/fonts/vermin-vibes/vermin-vibes.eot");
+  src: url("/fonts/vermin-vibes/vermin-vibes.eot?#iefix") format("embedded-opentype"), url("/fonts/vermin-vibes/vermin-vibes.woff") format("woff"), url("/fonts/vermin-vibes/vermin-vibes.ttf") format("truetype"), url("/fonts/vermin-vibes/vermin-vibes.svg#Vermin-Vibes") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'outer-zone';
+  src: url("/fonts/outer-zone/outer_zone-webfont.eot");
+  src: url("/fonts/outer-zone/outer_zone-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/outer-zone/outer_zone-webfont.woff2") format("woff2"), url("/fonts/outer-zone/outer_zone-webfont.woff") format("woff"), url("/fonts/outer-zone/outer_zone-webfont.ttf") format("truetype"), url("/fonts/outer-zone/outer_zone-webfont.svg#outer_zoneregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 div, p, span, h1, h2, h3, h4, h5, h6, a {
   font-family: "Source Sans Pro", sans-serif; }
 
@@ -8281,6 +8295,8 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
 
 .carousel {
   height: 100%; }
+  .carousel:hover .carousel-inner .item div.description {
+    opacity: 1; }
   .carousel .indice-control {
     width: 100%;
     position: absolute;
@@ -8314,8 +8330,7 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
     height: 100%; }
     .carousel .carousel-inner .item {
       height: 100%;
-      background-size: cover;
-      background: none; }
+      background-color: black; }
       .carousel .carousel-inner .item img, .carousel .carousel-inner .item a > img {
         margin: auto; }
       .carousel .carousel-inner .item.placeholder {
@@ -8328,15 +8343,17 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
         background-color: white;
         max-width: 100%;
         max-height: 100%; }
-      .carousel .carousel-inner .item.active div.description {
+      .carousel .carousel-inner .item div.description {
+        opacity: 0.15;
+        transition: opacity 0.7s;
         position: absolute;
         bottom: 0;
         width: 100%;
-        background-color: rgba(210, 210, 210, 0.6);
+        background-color: rgba(210, 210, 210, 0.83);
         padding: 0px 20%; }
-        .carousel .carousel-inner .item.active div.description p.title {
+        .carousel .carousel-inner .item div.description p.title {
           font-size: 2.5em; }
-        .carousel .carousel-inner .item.active div.description p.description {
+        .carousel .carousel-inner .item div.description p.description {
           font-size: 1.3em; }
 
 .background {
@@ -8371,16 +8388,21 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
 .red {
   color: red; }
 
+.blue {
+  color: blue; }
+
 .header h1 {
-  color: white;
+  color: #FFFFB9;
   text-align: center;
-  font-size: 6em; }
+  font-size: 6em;
+  font-family: 'outer-zone';
+  margin: 20px 0; }
 
 .header nav {
   background-color: #222;
   padding: 0; }
   .header nav ul {
-    margin: 0;
+    margin: 0 auto;
     padding: 0; }
     .header nav ul li {
       border-style: solid;
