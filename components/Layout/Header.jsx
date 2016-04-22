@@ -10,17 +10,30 @@ var Header = React.createClass({
                 <h1>DevWars</h1>
                 <nav>
                     <ul className="container">
-                        <li className="col-xs-3">
-                            Home
+                        <li>
+                            <Link route="home">
+                                Home
+                            </Link>
                         </li>
-                        <li className="col-xs-3">
-                            Play
+                        <li>
+                            <a href="#">
+                                Play
+                            </a>
                         </li>
-                        <li className="col-xs-3">
-                            Ranking
+                        <li>
+                            <a href="#">
+                                Ranking
+                            </a>
                         </li>
-                        <li className="col-xs-3">
-                            Contact
+                        <li>
+                            <Link route="dashboard">
+                                Dashboard
+                            </Link>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contact
+                            </a>
                         </li>
                     </ul>
                 </nav>
