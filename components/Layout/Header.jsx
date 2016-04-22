@@ -6,35 +6,34 @@ var Link = require('../Link.jsx');
 var Header = React.createClass({
     render: function () {
         return (
-            <header className="header">
-                <h1>DevWars</h1>
-                <nav>
-                    <ul className="container">
-                        <li>
-                            <Link route="home">
-                                Home
-                            </Link>
+            <header className="header col-xs-12">
+                
+                <nav className="col-xs-12">
+                    <h1 className="col-xs-3">DevWars</h1>
+                    <ul className="col-xs-8">
+                        <li className="">
+                            <span> <span id="play"> </span> Play </span>
                         </li>
-                        <li>
-                            <a href="#">
-                                Play
-                            </a>
+                        <li className="">
+                           <span> <span id="rank"> </span> Ranking </span>
                         </li>
-                        <li>
-                            <a href="#">
-                                Ranking
-                            </a>
+                        <li className="">
+                           <span> <span id="dashboard"> </span> Dashboard </span>
                         </li>
-                        <li>
-                            <Link route="dashboard">
-                                Dashboard
-                            </Link>
+                        <li className="">
+                           <span> <span id="contact"> </span> Contact </span>
                         </li>
-                        <li>
-                            <a href="#">
-                                Contact
-                            </a>
+
+                        <li className="socialMedia">
+                           <span id="facebook"> </span>
                         </li>
+                        <li className="socialMedia">
+                           <span id="twitter"> </span>
+                        </li>
+                        <li className="socialMedia">
+                           <span id="linkedin"> </span>
+                        </li>
+
                     </ul>
                 </nav>
             </header>
