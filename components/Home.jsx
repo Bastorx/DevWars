@@ -8,7 +8,7 @@ var pictures = [
 	{
 		url: "/images/banner/1.png",
 		title: "Equipe",
-		description: "La DevWars compétition continue ! Cette semaine le combat en équipe sont mis en avant ! Alors GO GO GO !"
+		description: "La DevWarsadasdasd compétition continue ! Cette semaine le combat en équipe sont mis en avant ! Alors GO GO GO !"
 	},
 	{
 		url: "/images/banner/2.jpg",

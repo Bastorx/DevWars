@@ -8335,6 +8335,7 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
         background-position: 50% 50%;
         background-color: white;
         max-width: 100%;
+        min-width: 100%;
         max-height: 100%; }
       .carousel .carousel-inner .item div.description {
         opacity: 0.15;
@@ -8342,7 +8343,7 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
         position: absolute;
         bottom: 0;
         width: 100%;
-        background-color: rgba(210, 210, 210, 0.83);
+        background-color: yellow;
         padding: 0px 20%; }
         .carousel .carousel-inner .item div.description p.title {
           font-size: 2.5em; }
@@ -8384,46 +8385,113 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
 .blue {
   color: blue; }
 
-.header h1 {
-  color: #FFFFB9;
-  text-align: center;
-  font-size: 6em;
-  font-family: 'outer-zone';
-  margin: 20px 0; }
-  @media screen and (max-width: 767px) {
-    .header h1 {
-      font-size: 2.6em; } }
-
-.header nav {
-  background-color: #222;
-  padding: 0; }
-  .header nav ul {
-    margin: 0 auto;
-    padding: 0; }
-    .header nav ul li {
-      border-style: solid;
-      border-color: #080808;
-      border-width: 0px 1px 0px 1px;
-      text-align: center;
-      color: #999;
-      font-size: 1.5em;
-      height: 100%;
-      padding: 5px 1px 5px 1px;
-      cursor: pointer;
-      display: inline-block; }
-      .header nav ul li:first-child {
-        padding-left: 0px;
-        border-left-width: 0px; }
-      .header nav ul li:last-child {
-        padding-right: 0px;
-        border-right-width: 0px; }
-      .header nav ul li:hover, .header nav ul li:active, .header nav ul li:focus {
-        color: white;
-        background-color: #080808; }
+.header {
+  width: 100%;
+  padding: 0 !important;
+  z-index: 10; }
+  .header nav {
+    padding: 10px 0 0px 0;
+    background-color: white;
+    display: inline-block; }
+    .header nav h1 {
+      color: #3A747F;
+      text-align: left;
+      font-size: 2em;
+      font-family: 'outer-zone';
+      display: inline-block;
+      float: left;
+      padding: 0px 0px 0px 20px;
+      margin: 0; }
+      @media screen and (max-width: 767px) {
+        .header nav h1 {
+          font-size: 1.5em; } }
+    .header nav ul {
+      float: left;
+      padding: 0;
+      margin: 0; }
+      .header nav ul li {
+        min-width: 15% !important;
+        max-width: 40% !important;
+        margin: 0;
+        text-align: center;
+        color: #999;
+        font-size: 1.5em;
+        height: 100%;
+        padding: 5px 0;
+        cursor: pointer;
+        display: inline;
+        padding-left: 15px; }
+        .header nav ul li:first-child {
+          padding: 0;
+          border-left-width: 0px; }
+        .header nav ul li:last-child {
+          padding-right: 0px;
+          border-right-width: 0px; }
+        .header nav ul li span span {
+          width: 15px;
+          height: 15px;
+          display: inline-table;
+          margin-right: 7px; }
+        .header nav ul li span #play {
+          background: url(/images/icons/play.png);
+          background-size: cover; }
+        .header nav ul li span #rank {
+          background: url(/images/icons/sign.png);
+          background-size: cover; }
+        .header nav ul li span #dashboard {
+          background: url(/images/icons/shape.png);
+          background-size: cover; }
+        .header nav ul li span #contact {
+          background: url(/images/icons/paper.png);
+          background-size: cover; }
+        .header nav ul li:hover span, .header nav ul li:active span, .header nav ul li:focus span {
+          color: #3A747F; }
+          .header nav ul li:hover span #play, .header nav ul li:active span #play, .header nav ul li:focus span #play {
+            background: url(/images/icons/play-color.png);
+            background-size: cover; }
+          .header nav ul li:hover span #rank, .header nav ul li:active span #rank, .header nav ul li:focus span #rank {
+            background: url(/images/icons/sign-color.png);
+            background-size: cover; }
+          .header nav ul li:hover span #dashboard, .header nav ul li:active span #dashboard, .header nav ul li:focus span #dashboard {
+            background: url(/images/icons/shape-color.png);
+            background-size: cover; }
+          .header nav ul li:hover span #contact, .header nav ul li:active span #contact, .header nav ul li:focus span #contact {
+            background: url(/images/icons/paper-color.png);
+            background-size: cover; }
+      .header nav ul .socialMedia {
+        min-width: 5% !important;
+        max-width: 10% !important;
+        height: auto;
+        float: right;
+        padding: 0; }
+        .header nav ul .socialMedia span {
+          width: 25px;
+          height: 25px;
+          display: inline-table; }
+        .header nav ul .socialMedia #facebook {
+          background: url(/images/icons/social-1.png);
+          background-size: cover; }
+        .header nav ul .socialMedia #twitter {
+          margin-top: 4px;
+          background: url(/images/icons/social.png);
+          background-size: cover; }
+        .header nav ul .socialMedia #linkedin {
+          background: url(/images/icons/social-2.png);
+          background-size: cover; }
+        .header nav ul .socialMedia:hover #facebook, .header nav ul .socialMedia:active #facebook, .header nav ul .socialMedia:focus #facebook {
+          background: url(/images/icons/social-1-color.png);
+          background-size: cover; }
+        .header nav ul .socialMedia:hover #twitter, .header nav ul .socialMedia:active #twitter, .header nav ul .socialMedia:focus #twitter {
+          margin-top: 4px;
+          background: url(/images/icons/social-color.png);
+          background-size: cover; }
+        .header nav ul .socialMedia:hover #linkedin, .header nav ul .socialMedia:active #linkedin, .header nav ul .socialMedia:focus #linkedin {
+          background: url(/images/icons/social-2-color.png);
+          background-size: cover; }
 
 #content.home .section {
   min-height: 100vh;
-  padding: 20vh 0; }
+  padding: 0 0; }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     #content.home .section {
       padding: 22.5vh 0; } }

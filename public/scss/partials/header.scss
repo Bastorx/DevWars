@@ -1,44 +1,138 @@
 .header {
-    h1 {
-    	color: $white-yellow;
-    	text-align: center;
-    	@media screen and (max-width: $screen-xs-max) {
-    		font-size: 2.6em;
-    	}
-    	font-size: 6em;
-    	font-family: 'outer-zone';
-    	margin: 20px 0;
-    }
+	width:100%;
+	padding: 0 !important;
+	z-index:10;
 	nav {
-		background-color: #222;
-		padding: 0;
+		padding: 10px 0 0px 0;
+		h1 {
+	    	color: $dark-blue;
+	    	text-align: left;
+	    	@media screen and (max-width: $screen-xs-max) {
+	    		font-size: 1.5em;
+	    	}
+	    	font-size: 2em;
+	    	font-family: 'outer-zone';
+	    	display: inline-block;
+	    	float: left;
+	    	padding: 0px 0px 0px 20px;
+	    	margin: 0;
+	    	
+    	}
+		background-color: white;
+		display: inline-block;
 		ul {
-			margin: 0 auto;
+			float: left;
 			padding: 0;
+			margin: 0;
 			li {
-				border-style: solid;
-				border-color: #080808;
-				border-width: 0px 1px 0px 1px;
+				min-width: 15% !important;
+				max-width: 40% !important;
+				margin: 0;
 				text-align: center;
 				color: #999;
 				font-size: 1.5em;
 				height: 100%;
-				padding: 5px 1px 5px 1px;
-
+				padding: 5px 0;
 				cursor: pointer;
+				display: inline;
+				padding-left: 15px;
 				&:first-child {
-					padding-left: 0px;
+					padding: 0;
 					border-left-width: 0px;
 				}
 				&:last-child {
 					padding-right: 0px;
 					border-right-width: 0px;
 				}
-				display: inline-block;
+				span {
+					span{
+						width: 15px;
+						height: 15px;
+						display: inline-table;
+						margin-right: 7px;
+					}
+					#play{
+						background: url(/images/icons/play.png);
+						background-size: cover;
+					}
+					#rank{
+						background: url(/images/icons/sign.png);
+						background-size: cover;
+					}
+					#dashboard{
+						background: url(/images/icons/shape.png);
+						background-size: cover;
+					}
+					#contact{
+						background: url(/images/icons/paper.png);
+						background-size: cover;
 
+					}
+
+				}	
 				&:hover, &:active, &:focus {
-					color: white;
-					background-color: #080808;
+						span {
+							#play{
+								background: url(/images/icons/play-color.png);
+								background-size: cover;
+							}
+							#rank{
+								background: url(/images/icons/sign-color.png);
+								background-size: cover;
+							}
+							#dashboard{
+								background: url(/images/icons/shape-color.png);
+								background-size: cover;
+							}
+							#contact{
+								background: url(/images/icons/paper-color.png);
+								background-size: cover;
+							}
+							color: $dark-blue;
+						}
+						
+				}
+				
+			}
+			.socialMedia{
+				min-width: 5% !important;
+				max-width: 10% !important;
+				height: auto;
+				float: right;
+				padding: 0;
+				span{
+					width: 25px;
+					height: 25px;
+					display: inline-table;
+					//margin-right: 7px;
+				}
+				#facebook{
+					background: url(/images/icons/social-1.png);
+					background-size: cover;
+				}
+				#twitter{
+					margin-top: 4px;
+					background: url(/images/icons/social.png);
+					background-size: cover;
+				}
+				#linkedin{
+					background: url(/images/icons/social-2.png);
+					background-size: cover;
+				}
+				&:hover, &:active, &:focus { 
+					#facebook{
+						background: url(/images/icons/social-1-color.png);
+						background-size: cover;
+					}
+					#twitter{
+						margin-top: 4px;
+						background: url(/images/icons/social-color.png);
+						background-size: cover;
+					}
+					#linkedin{
+						background: url(/images/icons/social-2-color.png);
+						background-size: cover;
+					}
 				}
 			}
 		}
