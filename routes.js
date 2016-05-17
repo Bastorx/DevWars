@@ -1,8 +1,14 @@
 module.exports = {
 	home: {
-		title: "Bastien CHEVALLIER",
+		title: "HomePage",
 		path: "/",
 		method: "get",
 		handler: require("./components/Home.jsx")
+	},
+	dashboard: {
+		title: "Dashboard Page",
+		path: "/dashboard",
+		method: "get",
+		handler: require("./components/DashBoard.jsx")
 	}
 };

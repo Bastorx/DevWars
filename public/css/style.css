@@ -8385,6 +8385,12 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
 .blue {
   color: blue; }
 
+.white {
+  color: white; }
+
+.lightblue {
+  color: lightblue; }
+
 .header {
   width: 100%;
   padding: 0 !important;
@@ -8566,3 +8572,56 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
     margin: 15px 0px 15px 0px;
     float: none;
     display: inline-block; }
+
+#content .dashboard1 {
+  border-style: solid;
+  border-width: medium;
+  height: 405px; }
+  #content .dashboard1 .img {
+    vertical-align: center; }
+
+#content .fontsDash p.info {
+  padding-top: 50px;
+  padding-left: 15px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  font-size: 1.2em;
+  vertical-align: center; }
+
+#content .fontsDash p.change {
+  padding-left: 15px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  font-size: 1.2em;
+  vertical-align: center; }
+
+#content .fontsDash p.ranking {
+  font-family: "Times New Roman";
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center; }
+
+#content .fontsDash p.rankingFirst {
+  padding-top: 15px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  font-size: 1.4em;
+  text-align: center; }
+
+#content .fontsDash p.rankingSecond {
+  padding-top: 10px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center; }
+
+#content .dashboard2 {
+  height: 405px; }
+
+#content .dashboard3 {
+  border-style: solid;
+  border-width: medium;
+  height: 405px; }
+
+#content .dashboard4 {
+  height: 405px; }
