@@ -8338,24 +8338,25 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
         min-width: 100%;
         max-height: 100%; }
       .carousel .carousel-inner .item div.description {
-        opacity: 0.15;
-        transition: opacity 0.7s;
         position: absolute;
-        bottom: 0;
+        bottom: 15vh;
+        text-align: center;
+        color: white;
         width: 100%;
-        background-color: yellow;
+        background-color: none;
         padding: 0px 20%; }
         .carousel .carousel-inner .item div.description p.title {
-          font-size: 2.5em; }
+          font-size: 4em;
+          color: red;
+          font-family: 'outer-zone'; }
         .carousel .carousel-inner .item div.description p.description {
-          font-size: 1.3em; }
+          font-size: 1.2em;
+          font-family: "Source Sans Pro", sans-serif; }
 
 .background {
   position: fixed;
   z-index: -1;
-  background: url("/images/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: none;
   top: 0;
   bottom: 0;
   left: 0;
