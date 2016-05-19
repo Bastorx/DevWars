@@ -26,6 +26,7 @@
     "express-react-views": "^0.9.0",
     "fluxible": "^1.0.3",
     "fluxible-addons-react": "^0.2.0",
+    "fluxible-plugin-api": "^0.1.1",
     "fluxible-router": "^0.4.0",
     "grunt": "^0.4.5",
     "grunt-browserify": "^4.0.1",

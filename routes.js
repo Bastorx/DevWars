@@ -12,9 +12,9 @@ module.exports = {
 		handler: require("./components/DashBoard.jsx")
 	},
 	connexion: {
-		title: "Connexion Page",
-		path: "/connexion",
+		title: "Connection Page",
+		path: "/connection",
 		method: "get",
-		handler: require("./components/connexion.jsx")
+		handler: require("./components/Connection.jsx")
 	}
 };
