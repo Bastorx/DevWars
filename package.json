@@ -8,7 +8,7 @@
   },
   "scripts": {
     "postinstall": "npm run bower && npm run build",
-    "start": "node ./server.js",
+    "start": "grunt prod",
     "bower": "bower install",
     "dev": "grunt dev",
     "full": "grunt full",

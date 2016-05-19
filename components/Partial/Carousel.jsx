@@ -23,7 +23,7 @@ module.exports = React.createClass({
         var items = _.map(this.props.pictures, function (picture, i) {
             var cls = (i == this.state.displayIndex) ? "item active" : "item";
             return (
-                <div className={cls}>
+                <div className={cls} key={i}>
                     <Picture picture={picture} role={this.props.gallery ? "button" : ''} backgroundStyle={this.props.backgroundStyle} onClick={this.props.gallery ? this.openGallery : ''}/>
                     {picture.title || picture.description ?
                         <div className="description">

@@ -1,0 +1,23 @@
+.ConnectUser{
+	padding: 40px;
+	padding-top:100px;
+	.connexion{
+		text-align: center;
+		.connexion-title{
+			text-align: center;
+			font-weight: bold;
+		}
+		background-color: lightgrey;
+		padding:20px;
+		input{
+			margin:15px;
+			margin-right: 0;
+			margin-left: 0;
+		}
+		.button-perso{
+			width: 70%;
+			background-color: lightblue;
+			border:none;
+		}
+	}
+}
