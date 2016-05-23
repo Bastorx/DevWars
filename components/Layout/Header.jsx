@@ -12,16 +12,19 @@ var Header = React.createClass({
                     <h1 className="col-xs-3">DevWars</h1>
                     <ul className="col-xs-8">
                         <li className="">
-                            <span> <span id="play"> </span> Play </span>
+                            <span> <span id="play"/> Play </span>
                         </li>
                         <li className="">
-                           <span> <span id="rank"> </span> Ranking </span>
+                           <span> <span id="rank"/> Ranking </span>
                         </li>
                         <li className="">
-                           <span> <span id="dashboard"> </span> Dashboard </span>
+                           <span> 
+                                <span id="dashboard"/>
+                                <Link route="dashboard"> Dashboard </Link>
+                            </span>
                         </li>
                         <li className="">
-                           <span> <span id="contact"> </span> Contact </span>
+                           <span> <span id="contact"/> Contact </span>
                         </li>
 
                         <li className="socialMedia">
