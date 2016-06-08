@@ -11,4 +11,10 @@ module.exports = {
 		method: "get",
 		handler: require("./components/DashBoard.jsx")
 	}
+	play: {
+		title: "Play Page",
+		path: "/play",
+		method: "get",
+		handler: require("./components/Play.jsx")
+	}
 };
