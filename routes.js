@@ -10,7 +10,13 @@ module.exports = {
 		path: "/dashboard",
 		method: "get",
 		handler: require("./components/DashBoard.jsx")
-	}
+	},
+	connexion: {
+		title: "Connection Page",
+		path: "/connection",
+		method: "get",
+		handler: require("./components/Connection.jsx")
+	},
 	play: {
 		title: "Play Page",
 		path: "/play",

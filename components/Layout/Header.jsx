@@ -12,7 +12,10 @@ var Header = React.createClass({
                     <h1 className="col-xs-3">DevWars</h1>
                     <ul className="col-xs-8">
                         <li className="">
-                            <span> <span id="play"/> Play </span>
+                           <span> 
+                                <span id="play"/>
+                                <Link route="play"> Play </Link>
+                            </span>
                         </li>
                         <li className="">
                            <span> <span id="rank"/> Ranking </span>

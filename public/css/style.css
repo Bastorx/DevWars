@@ -8338,24 +8338,25 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
         min-width: 100%;
         max-height: 100%; }
       .carousel .carousel-inner .item div.description {
-        opacity: 0.15;
-        transition: opacity 0.7s;
         position: absolute;
-        bottom: 0;
+        bottom: 15vh;
+        text-align: center;
+        color: white;
         width: 100%;
-        background-color: yellow;
+        background-color: none;
         padding: 0px 20%; }
         .carousel .carousel-inner .item div.description p.title {
-          font-size: 2.5em; }
+          font-size: 4em;
+          color: red;
+          font-family: 'outer-zone'; }
         .carousel .carousel-inner .item div.description p.description {
-          font-size: 1.3em; }
+          font-size: 1.2em;
+          font-family: "Source Sans Pro", sans-serif; }
 
 .background {
   position: fixed;
   z-index: -1;
-  background: url("/images/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: none;
   top: 0;
   bottom: 0;
   left: 0;
@@ -8495,6 +8496,13 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
           background: url(/images/icons/social-2-color.png);
           background-size: cover; }
 
+.footer {
+  display: block;
+  height: 300px;
+  background-color: black; }
+  .footer .links-right {
+    background-color: white; }
+
 #content.home .section {
   min-height: 100vh;
   padding: 0 0; }
@@ -8625,3 +8633,76 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
 
 #content .dashboard4 {
   height: 405px; }
+
+.notifications-tr {
+  position: absolute !important;
+  margin-top: 50% !important; }
+
+.ConnectUser {
+  padding: 150px;
+  padding-top: 100px;
+  background-color: lightgrey;
+  display: -webkit-box; }
+  .ConnectUser .connexion {
+    margin-left: -25px;
+    margin-right: 25px; }
+  .ConnectUser .active {
+    border: solid 3px #3a747f !important;
+    color: #3a747f; }
+    .ConnectUser .active .title .titleText {
+      color: #3a747f !important; }
+    .ConnectUser .active .button-perso {
+      color: #3a747f !important;
+      border-color: #3a747f !important; }
+    .ConnectUser .active .button-perso:hover {
+      color: white !important;
+      border-color: lightgrey !important; }
+  .ConnectUser .connexion,
+  .ConnectUser .inscription {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+    padding: 20px; }
+    .ConnectUser .connexion .title .titleText,
+    .ConnectUser .inscription .title .titleText {
+      font-size: 30px;
+      font-weight: bold;
+      color: lightgrey;
+      float: left; }
+    .ConnectUser .connexion .connexion-content,
+    .ConnectUser .connexion .inscription-content,
+    .ConnectUser .inscription .connexion-content,
+    .ConnectUser .inscription .inscription-content {
+      position: static;
+      margin-bottom: 70px; }
+    .ConnectUser .connexion input,
+    .ConnectUser .inscription input {
+      height: 40px;
+      margin: 15px;
+      margin-right: 0;
+      margin-left: 0;
+      border: none;
+      padding-left: 0;
+      border-bottom: solid 2px lightgrey; }
+    .ConnectUser .connexion input:focus,
+    .ConnectUser .inscription input:focus {
+      border-bottom: solid 2px #3a747f;
+      outline: none; }
+    .ConnectUser .connexion .button-perso,
+    .ConnectUser .inscription .button-perso {
+      width: 70%;
+      background-color: white;
+      color: lightgrey;
+      font-size: 20px;
+      border: solid 2px lightgrey;
+      padding: 15px;
+      margin-left: 13.5%;
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      font-weight: bold; }
+    .ConnectUser .connexion .button-perso:hover,
+    .ConnectUser .inscription .button-perso:hover {
+      background-color: lightgrey;
+      color: white; }
