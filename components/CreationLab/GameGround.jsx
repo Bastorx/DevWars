@@ -15,9 +15,10 @@ var GameGround = React.createClass({
 		var direction = 0;
 
 		document.getElementById("PlayGround").style.backgroundColor = 'rgba(158, 167, 184, 0.2)';
-		image.src = "/images/icons/play.png";
+		image.src = "/images/spaceship1/1.png";
 		function run(){
 			randMove();
+			animation();
 			render();
 
 			window.requestAnimationFrame(run);
@@ -25,27 +26,43 @@ var GameGround = React.createClass({
 		function randSpeed(){
 			var PosorNeg = Math.floor((Math.random() * 2) + 1);
 			if (PosorNeg == 1){;
-				return Math.floor((Math.random() * 15));
+				return Math.floor((Math.random() * 4));
 			}
 			else if (PosorNeg == 2){
-				return -(Math.floor((Math.random() * 15)));
+				return -(Math.floor((Math.random() * 4)));
 			}
 		}
 		function randMove(){
 			if (direction == 0) {
 				SpeedXplayer1 = randSpeed();
 				SpeedYplayer1 = randSpeed();
-				direction = 10;
+				direction = 50;
 			}
-			if (Yplayer1 + SpeedYplayer1 > 0 && Yplayer1 + SpeedYplayer1 < (c.height - 25))
+			if (Yplayer1 + SpeedYplayer1 > 0 && Yplayer1 + SpeedYplayer1 < (c.height - 50))
 				Yplayer1 += SpeedYplayer1;
-			if (Xplayer1 + SpeedXplayer1 > 0 && Xplayer1 + SpeedXplayer1 < (c.width - 25))
+			if (Xplayer1 + SpeedXplayer1 > 0 && Xplayer1 + SpeedXplayer1 < (c.width - 50))
 				Xplayer1 += SpeedXplayer1;
 			direction -= 1;
 		}
 		function render(){
 			ctx.clearRect(0, 0, c.width, c.height);
-			ctx.drawImage(image, Xplayer1, Yplayer1, 15, 15);
+			ctx.drawImage(image, Xplayer1, Yplayer1, 50, 50);
+		}
+		function animation(){
+			var anim = direction % 16;
+
+			if(anim <= 4){
+				image.src = "/images/spaceship1/1.png";
+			}
+			else if (anim > 4 && anim <= 8){
+				image.src = "/images/spaceship1/2.png";
+			}
+			else if (anim > 8 && anim <= 12){
+				image.src = "/images/spaceship1/3.png";
+			}
+			else if (anim > 12){
+				image.src = "/images/spaceship1/4.png";
+			}
 		}
 
 		//ctx.fillRect(0, 0, 100, 100);
@@ -53,7 +70,7 @@ var GameGround = React.createClass({
 	},
 	render: function() {
 		return (
-			<canvas id="PlayGround" width="500" height="500"> 
+			<canvas id="PlayGround" width="500" height="400"> 
 				Texte alternatif pour les navigateurs ne supportant pas Canvas.
 			</canvas>
 		);

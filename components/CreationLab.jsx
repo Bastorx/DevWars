@@ -8,7 +8,15 @@ var creationlab = React.createClass({
 	render: function() {
 		return (
 			<Layout>
+				<div className="titleLab">
+					<h1>Welcome in your SpaceShip Laboratory</h1>
+				</div>
+				<div className="col-md-1"></div>
 				<GameGround />
+				<textarea type="text" className="col-md-5 codeplace" ></textarea>
+				<div className="col-md-12 button-Lab">
+					<button className="button-perso"> Save and launch your Spaceship </button>
+				</div>
 			</Layout>
 		);
 	}

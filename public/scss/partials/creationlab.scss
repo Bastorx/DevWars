@@ -1,0 +1,31 @@
+.codeplace{
+	height:400px;
+	background-color:black;
+	color:white;
+	padding-top:5px;
+}
+#PlayGround{
+	float:left;
+}
+.titleLab{
+	padding:80px 0 30px 0;
+	h1{
+		text-align:center;
+		font-family: "commando";
+	}
+	
+}
+.button-Lab{
+	margin-top:15px;
+	margin-bottom:30px;
+	.button-perso{
+		width: 70%;
+		background-color: white;
+		color:lightgrey;
+		font-size: 20px;
+		border:solid 2px lightgrey;
+		padding: 15px;
+		margin-left: 13.5%;
+		font-weight: bold;
+	}
+}
