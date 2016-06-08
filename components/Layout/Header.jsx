@@ -7,7 +7,6 @@ var Header = React.createClass({
     render: function () {
         return (
             <header className="header col-xs-12">
-                
                 <nav className="col-xs-12">
                     <h1 className="col-xs-3">DevWars</h1>
                     <ul className="col-xs-8">
