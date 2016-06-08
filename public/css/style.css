@@ -8353,9 +8353,9 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
         background-color: none;
         padding: 0px 20%; }
         .carousel .carousel-inner .item div.description p.title {
-          font-size: 4em;
+          font-size: 6em;
           color: red;
-          font-family: 'outer-zone'; }
+          font-family: 'commando'; }
         .carousel .carousel-inner .item div.description p.description {
           font-size: 1.2em;
           font-family: "Source Sans Pro", sans-serif; }
