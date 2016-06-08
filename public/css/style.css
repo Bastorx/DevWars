@@ -8239,6 +8239,13 @@ button.close {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'commando';
+  src: url("/fonts/commando/commando-webfont.eot");
+  src: url("/fonts/commando/commando-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/commando/commando-webfont.woff") format("woff"), url("/fonts/commando/commando-webfont.ttf") format("truetype"), url("/fonts/commando/commando-webfont.svg#outer_zoneregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 div, p, span, h1, h2, h3, h4, h5, h6, a {
   font-family: "Source Sans Pro", sans-serif; }
 
@@ -8403,8 +8410,8 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
     .header nav h1 {
       color: #3A747F;
       text-align: left;
-      font-size: 2em;
-      font-family: 'outer-zone';
+      font-size: 3em;
+      font-family: 'commando';
       display: inline-block;
       float: left;
       padding: 0px 0px 0px 20px;
@@ -8451,20 +8458,23 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
         .header nav ul li span #contact {
           background: url(/images/icons/paper.png);
           background-size: cover; }
-        .header nav ul li:hover span, .header nav ul li:active span, .header nav ul li:focus span {
-          color: #3A747F; }
-          .header nav ul li:hover span #play, .header nav ul li:active span #play, .header nav ul li:focus span #play {
-            background: url(/images/icons/play-color.png);
-            background-size: cover; }
-          .header nav ul li:hover span #rank, .header nav ul li:active span #rank, .header nav ul li:focus span #rank {
-            background: url(/images/icons/sign-color.png);
-            background-size: cover; }
-          .header nav ul li:hover span #dashboard, .header nav ul li:active span #dashboard, .header nav ul li:focus span #dashboard {
-            background: url(/images/icons/shape-color.png);
-            background-size: cover; }
-          .header nav ul li:hover span #contact, .header nav ul li:active span #contact, .header nav ul li:focus span #contact {
-            background: url(/images/icons/paper-color.png);
-            background-size: cover; }
+        .header nav ul li span a {
+          color: #999; }
+        .header nav ul li:hover span #play, .header nav ul li:active span #play, .header nav ul li:focus span #play {
+          background: url(/images/icons/play-color.png);
+          background-size: cover; }
+        .header nav ul li:hover span #rank, .header nav ul li:active span #rank, .header nav ul li:focus span #rank {
+          background: url(/images/icons/sign-color.png);
+          background-size: cover; }
+        .header nav ul li:hover span #dashboard, .header nav ul li:active span #dashboard, .header nav ul li:focus span #dashboard {
+          background: url(/images/icons/shape-color.png);
+          background-size: cover; }
+        .header nav ul li:hover span #contact, .header nav ul li:active span #contact, .header nav ul li:focus span #contact {
+          background: url(/images/icons/paper-color.png);
+          background-size: cover; }
+        .header nav ul li:hover span a, .header nav ul li:active span a, .header nav ul li:focus span a {
+          color: #3A747F;
+          text-decoration: none !important; }
       .header nav ul .socialMedia {
         min-width: 5% !important;
         max-width: 10% !important;
