@@ -1,23 +1,82 @@
+.notifications-tr{
+	position:absolute !important;
+	margin-top: 50% !important;
+}
 .ConnectUser{
-	padding: 40px;
+	padding: 150px;
 	padding-top:100px;
+	background-color: lightgrey;
+	display: -webkit-box;
 	.connexion{
-		text-align: center;
-		.connexion-title{
-			text-align: center;
-			font-weight: bold;
+		margin-left: -25px;
+		margin-right: 25px;
+	}
+	.active{
+		border:solid 3px #3a747f !important;
+		color: #3a747f;
+		.title{
+			.titleText{
+				color: #3a747f !important;
+			}
 		}
-		background-color: lightgrey;
+		.button-perso{
+			color:#3a747f !important;
+			border-color:#3a747f !important;
+		}
+		.button-perso:hover{
+			color: white !important;
+			border-color: lightgrey !important;
+		}
+	}
+	.connexion,
+	.inscription{
+		position:relative;
+		cursor:pointer;
+		text-align: center;
+		background-color: white;
 		padding:20px;
+		.title{
+			.titleText{
+				font-size: 30px;
+				font-weight: bold;
+				color:lightgrey;
+				float: left;
+			}
+		}
+		.connexion-content,
+		.inscription-content{
+			position:  static;
+			margin-bottom: 70px;
+		}
 		input{
+			height:40px;
 			margin:15px;
 			margin-right: 0;
 			margin-left: 0;
+			border:none;
+			padding-left:0;
+			border-bottom: solid 2px lightgrey;
+		}
+		input:focus{
+			border-bottom: solid 2px #3a747f;
+			outline: none;
 		}
 		.button-perso{
 			width: 70%;
-			background-color: lightblue;
-			border:none;
+			background-color: white;
+			color:lightgrey;
+			font-size: 20px;
+			border:solid 2px lightgrey;
+			padding: 15px;
+			margin-left: 13.5%;
+			position: absolute;
+			bottom: 15px;
+			left: 0;
+			font-weight: bold;
+		}
+		.button-perso:hover{
+			background-color: lightgrey;
+			color:white;
 		}
 	}
 }
