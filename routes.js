@@ -10,5 +10,17 @@ module.exports = {
 		path: "/dashboard",
 		method: "get",
 		handler: require("./components/DashBoard.jsx")
+	},
+	connexion: {
+		title: "Connection Page",
+		path: "/connection",
+		method: "get",
+		handler: require("./components/Connection.jsx")
+	},
+	creationlab: {
+		title: "Creation Laboratory",
+		path: "/creationlab",
+		method: "get",
+		handler: require("./components/CreationLab.jsx")
 	}
 };

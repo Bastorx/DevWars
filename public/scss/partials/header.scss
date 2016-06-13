@@ -2,6 +2,7 @@
 	width:100%;
 	padding: 0 !important;
 	z-index:10;
+	
 	nav {
 		padding: 10px 0 0px 0;
 		h1 {
@@ -10,8 +11,8 @@
 	    	@media screen and (max-width: $screen-xs-max) {
 	    		font-size: 1.5em;
 	    	}
-	    	font-size: 2em;
-	    	font-family: 'outer-zone';
+	    	font-size: 3em;
+	    	font-family: 'commando';
 	    	display: inline-block;
 	    	float: left;
 	    	padding: 0px 0px 0px 20px;
@@ -68,6 +69,9 @@
 						background-size: cover;
 
 					}
+					a{
+						color: #999;
+					}
 
 				}	
 				&:hover, &:active, &:focus {
@@ -88,7 +92,11 @@
 								background: url(/images/icons/paper-color.png);
 								background-size: cover;
 							}
-							color: $dark-blue;
+							a{
+								color: $dark-blue;
+								text-decoration: none !important;
+							}
+							
 						}
 						
 				}
