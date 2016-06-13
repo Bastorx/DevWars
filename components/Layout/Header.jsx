@@ -7,40 +7,42 @@ var Header = React.createClass({
     render: function () {
         return (
             <header className="header col-xs-12">
-                
                 <nav className="col-xs-12">
                     <Link route="home"> <h1 className="col-xs-3">DevWars</h1> </Link>
                     <ul className="col-xs-8">
-                        <li className="">
+                        <li>
                             <span>
-                                <span id="play"/>
-                                <Link route="creationlab"> Play </Link>
+                              <span id="play"/>
+                              <Link route="creationlab"> Play </Link>
                             </span>
                         </li>
-                        <li className="">
+                        <li>
                             <span>
-                               <span id="rank"/>
-                               <Link route="dashboard"> Ranking </Link>
+                              <span id="rank"/>
+                              <Link route="dashboard"> Ranking </Link>
                             </span>
                         </li>
-                        <li className="">
+                        <li>
                            <span> 
-                                <span id="dashboard"/>
-                                <Link route="dashboard"> Dashboard </Link>
+                              <span id="dashboard"/>
+                              <Link route="dashboard"> Dashboard </Link>
                             </span>
                         </li>
-                        <li className="">
-                           <span> <span id="contact"/> Contact </span>
+                        <li>
+                           <span> 
+                              <span id="contact"/> 
+                              Contact 
+                            </span>
                         </li>
 
                         <li className="socialMedia">
-                           <span id="facebook"> </span>
+                           <span id="facebook"/>
                         </li>
                         <li className="socialMedia">
-                           <span id="twitter"> </span>
+                           <span id="twitter"/>
                         </li>
                         <li className="socialMedia">
-                           <span id="linkedin"> </span>
+                           <span id="linkedin"/>
                         </li>
 
                     </ul>

@@ -22,5 +22,11 @@ module.exports = {
 		path: "/creationlab",
 		method: "get",
 		handler: require("./components/CreationLab.jsx")
+	},
+	play: {
+		title: "Play Page",
+		path: "/play",
+		method: "get",
+		handler: require("./components/Play.jsx")
 	}
 };

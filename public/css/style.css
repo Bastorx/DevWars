@@ -8744,3 +8744,25 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
     padding: 15px;
     margin-left: 13.5%;
     font-weight: bold; }
+
+#content .arena {
+  margin-top: 100px;
+  margin-bottom: 175px;
+  border-style: solid;
+  border-width: medium; }
+
+.tank1 {
+  margin-top: 12px;
+  margin-left: 51px;
+  height: 15px;
+  width: 7px;
+  border-style: solid;
+  border-width: medium; }
+
+.tank2 {
+  margin-top: 82px;
+  margin-left: 111px;
+  height: 15px;
+  width: 7px;
+  border-style: solid;
+  border-width: medium; }
