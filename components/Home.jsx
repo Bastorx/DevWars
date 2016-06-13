@@ -22,7 +22,7 @@ var Home = React.createClass({
 		return (
 			<Layout>
 				<div id="content" className="home">
-					<Carousel pictures={pictures} gallery={true} style={{width: '100vw', height: '100vh'}}/>
+					<Carousel pictures={pictures} gallery={true} style={{width: '100%', height: '100vh'}}/>
 				</div>
 			</Layout>
 		);
