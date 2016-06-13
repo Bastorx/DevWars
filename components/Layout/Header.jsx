@@ -30,10 +30,7 @@ var Header = React.createClass({
                             </span>
                         </li>
                         <li className="">
-                            <span>
-                               <span id="contact"/>
-                               <Link route="connexion"> Connexion </Link>
-                            </span>
+                           <span> <span id="contact"/> Contact </span>
                         </li>
 
                         <li className="socialMedia">
