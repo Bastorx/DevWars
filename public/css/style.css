@@ -8381,6 +8381,14 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
     .coverflow__container__3WgC- .coverflow__figure__1IP2r .coverflow__text__skrhG {
       display: none; }
 
+.buttonSave {
+  background-color: white;
+  color: lightgrey;
+  font-size: 20px;
+  border: solid 2px lightgrey;
+  padding: 15px;
+  font-weight: bold; }
+
 .green {
   color: green; }
 
@@ -8513,83 +8521,19 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
   .footer .links-right {
     background-color: white; }
 
-#content.home .section {
-  min-height: 100vh;
-  padding: 0 0; }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    #content.home .section {
-      padding: 22.5vh 0; } }
-  @media screen and (max-width: 767px) {
-    #content.home .section {
-      padding: 25vh 0; } }
-  #content.home .section .background-section {
-    min-height: 60vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    word-wrap: break-word; }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      #content.home .section .background-section {
-        min-height: 55vh; } }
-    @media screen and (max-width: 767px) {
-      #content.home .section .background-section {
-        min-height: 50vh; } }
-
-#content.home #presentation.section {
+#content.home div.carousel {
+  width: 100%;
   position: relative; }
-  @media screen and (min-width: 1200px) {
-    #content.home #presentation.section div.title {
-      padding-top: 50px; } }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    #content.home #presentation.section div.title {
-      padding-top: 30px; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    #content.home #presentation.section div.title {
-      padding-top: 10px; } }
-  #content.home #presentation.section div.title h1 {
-    font-family: "vipnagorgialla", sans-serif !important;
-    font-weight: normal;
-    letter-spacing: -2px;
-    text-transform: uppercase;
-    line-height: 0.8em;
-    color: white; }
-    @media screen and (min-width: 1200px) {
-      #content.home #presentation.section div.title h1 {
-        font-size: 6.279em; } }
-    @media screen and (min-width: 992px) and (max-width: 1199px) {
-      #content.home #presentation.section div.title h1 {
-        font-size: 5.212142671857em; } }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      #content.home #presentation.section div.title h1 {
-        font-size: 4.037142753601074666308656em; } }
-    @media screen and (max-width: 767px) {
-      #content.home #presentation.section div.title h1 {
-        margin: 12px 0px 7px 0px;
-        font-size: 2.4em; } }
-    #content.home #presentation.section div.title h1:first-child {
-      color: #A9E2F3; }
-    #content.home #presentation.section div.title h1:nth-child(2) {
-      color: #BDBDBD; }
-
-#content.home #carousel.section div.container {
-  height: 100%; }
-  @media screen and (min-width: 1200px) {
-    #content.home #carousel.section div.container {
-      width: calc(500px / 13 * 31); } }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    #content.home #carousel.section div.container {
-      width: calc(400px / 11 * 27); } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    #content.home #carousel.section div.container {
-      width: calc(300px / 9 * 23); } }
-  @media screen and (max-width: 480px) {
-    #content.home #carousel.section div.container {
-      width: calc(200px / 5 * 8); } }
-
-#content.home #CV.section .container {
-  text-align: center; }
-  #content.home #CV.section .container .skill {
-    margin: 15px 0px 15px 0px;
-    float: none;
-    display: inline-block; }
+  #content.home div.carousel:before {
+    content: "";
+    display: block;
+    padding-top: 33.33333333333333%; }
+  #content.home div.carousel div.carousel-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
 
 #content .dashboard1 {
   border-style: solid;
@@ -8717,30 +8661,17 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
       background-color: lightgrey;
       color: white; }
 
-.codeplace {
+#content.creationLab div.title {
+  padding: 80px 0 30px 0; }
+  #content.creationLab div.title h1 {
+    text-align: center;
+    font-family: "commando"; }
+
+#content.creationLab .codeplace {
   height: 400px;
   background-color: black;
   color: white;
   padding-top: 5px; }
 
-#PlayGround {
+#content.creationLab #PlayGround {
   float: left; }
-
-.titleLab {
-  padding: 80px 0 30px 0; }
-  .titleLab h1 {
-    text-align: center;
-    font-family: "commando"; }
-
-.button-Lab {
-  margin-top: 15px;
-  margin-bottom: 30px; }
-  .button-Lab .button-perso {
-    width: 70%;
-    background-color: white;
-    color: lightgrey;
-    font-size: 20px;
-    border: solid 2px lightgrey;
-    padding: 15px;
-    margin-left: 13.5%;
-    font-weight: bold; }

@@ -2,6 +2,27 @@
 
 var React = require('react');
 
+var img = {
+	DPS: {
+		1: "/images/spaceship/DPS/1.png",
+		2: "/images/spaceship/DPS/2.png",
+		3: "/images/spaceship/DPS/3.png",
+		4: "/images/spaceship/DPS/4.png"
+	},
+	TANK: {
+		1: "/images/spaceship/DPS/1.png",
+		2: "/images/spaceship/DPS/2.png",
+		3: "/images/spaceship/DPS/3.png",
+		4: "/images/spaceship/DPS/4.png"
+	},
+	HEALER: {
+		1: "/images/spaceship/DPS/1.png",
+		2: "/images/spaceship/DPS/2.png",
+		3: "/images/spaceship/DPS/3.png",
+		4: "/images/spaceship/DPS/4.png"
+	}
+};
+
 
 var GameGround = React.createClass({
 	componentDidMount: function() {
@@ -15,10 +36,10 @@ var GameGround = React.createClass({
 		var direction = 0;
 
 		document.getElementById("PlayGround").style.backgroundColor = 'rgba(158, 167, 184, 0.2)';
-		image.src = "/images/spaceship1/1.png";
+		image.src = img.DPS['1'];
 		function run(){
 			randMove();
-			animation();
+			//animation();
 			render();
 
 			window.requestAnimationFrame(run);
@@ -48,7 +69,7 @@ var GameGround = React.createClass({
 			ctx.clearRect(0, 0, c.width, c.height);
 			ctx.drawImage(image, Xplayer1, Yplayer1, 50, 50);
 		}
-		function animation(){
+		/*function animation(){
 			var anim = direction % 16;
 
 			if(anim <= 4){
@@ -63,14 +84,14 @@ var GameGround = React.createClass({
 			else if (anim > 12){
 				image.src = "/images/spaceship1/4.png";
 			}
-		}
+		}*/
 
 		//ctx.fillRect(0, 0, 100, 100);
 		run();
 	},
 	render: function() {
 		return (
-			<canvas id="PlayGround" width="500" height="400"> 
+			<canvas id="PlayGround" width="500" height="500"> 
 				Texte alternatif pour les navigateurs ne supportant pas Canvas.
 			</canvas>
 		);
