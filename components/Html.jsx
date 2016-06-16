@@ -43,6 +43,7 @@ Nous comptons faire de ce classement une référence pour le recrutement. Pour l
                 	<link href="/components/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet" type="text/css" />
 				</head>
 				<body>
+					<div className="background" />
 					<div id="app" dangerouslySetInnerHTML={{__html: this.props.markup}} />
                 	<div className="oldBrowser" dangerouslySetInnerHTML={{__html: oldBrowserHtml}} />
 

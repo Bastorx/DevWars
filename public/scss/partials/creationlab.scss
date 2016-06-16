@@ -4,6 +4,7 @@
 		h1 {
 			text-align:center;
 			font-family: "commando";
+			color: $light-green;
 		}
 	}
 	.codeplace{
@@ -12,7 +13,11 @@
 		color:white;
 		padding-top:5px;
 	}
-	#PlayGround{
-		float:left;
+	#PlayGround {
+		float: left;
+		background-color: rgb(130, 140, 150);
+	}
+	.buttonSave {
+		margin-top: 30px;
 	}
 }

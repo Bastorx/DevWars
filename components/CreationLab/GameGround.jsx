@@ -35,7 +35,6 @@ var GameGround = React.createClass({
 		var	SpeedYplayer1 = 0;
 		var direction = 0;
 
-		document.getElementById("PlayGround").style.backgroundColor = 'rgba(158, 167, 184, 0.2)';
 		image.src = img.DPS['1'];
 		function run(){
 			randMove();
@@ -91,9 +90,11 @@ var GameGround = React.createClass({
 	},
 	render: function() {
 		return (
-			<canvas id="PlayGround" width="500" height="500"> 
-				Texte alternatif pour les navigateurs ne supportant pas Canvas.
-			</canvas>
+			<div {...this.props}>
+				<canvas id="PlayGround" width="500" height="500"> 
+					Texte alternatif pour les navigateurs ne supportant pas Canvas.
+				</canvas>
+			</div>
 		);
 	}
 });
