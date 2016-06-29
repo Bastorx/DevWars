@@ -3,8 +3,8 @@
   "version": "0.0.2",
   "private": true,
   "engines": {
-    "node": "5.1.x",
-    "npm": "3.3.x"
+    "node": "6.2.x",
+    "npm": "3.9.x"
   },
   "scripts": {
     "postinstall": "npm run bower && npm run build",
