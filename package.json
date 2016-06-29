@@ -18,7 +18,7 @@
   "dependencies": {
     "bower": "^1.6.7",
     "browserify": "^13.0.1",
-    "codemirror": "^5.13.4",
+    "codemirror": "^5.16.0",
     "compression": "^1.6.0",
     "cookie-parser": "^1.4.0",
     "debug": "^2.2.0",
@@ -47,6 +47,7 @@
     "q": "^1.4.1",
     "query-string": "^4.2.2",
     "react": "^15.1.0",
+    "react-codemirror": "^0.2.6",
     "react-dom": "^15.1.0",
     "react-notification-system": "^0.2.7",
     "reactify": "^1.1.1",
