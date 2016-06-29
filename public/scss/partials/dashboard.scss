@@ -19,44 +19,15 @@
 				margin: 10px calc(100% / 3);
 				border-radius: 100%;
 			}
+			div.user-info {
+				padding: 0px 50px;
+				margin-bottom: 50px;
+				p {
+					margin: 0;
+					color: $dark-blue;
+					font-size: 1.4em;
+				}
+			}
 		}
 	}
-	/*.fontsDash {
-		p.info {
-			padding-top: 50px;
-			padding-left: 15px;
-		    font-family: "Times New Roman";
-		    font-weight: bold;
-	    	font-size: 1.2em;
-			vertical-align: center;
-		}
-		p.change {
-			padding-left: 15px;
-		    font-family: "Times New Roman";
-		    font-weight: bold;
-	    	font-size: 1.2em;
-			vertical-align: center;
-		}
-		p.ranking {
-			// padding: 5px;
-		    font-family: "Times New Roman";
-		    font-weight: bold;
-	    	font-size: 1.2em;
-			text-align: center;
-		}
-		p.rankingFirst {
-			padding-top: 15px;
-		    font-family: "Times New Roman";
-		    font-weight: bold;
-	    	font-size: 1.4em;
-			text-align: center;
-		}
-		p.rankingSecond {
-			padding-top: 10px;
-		    font-family: "Times New Roman";
-		    font-weight: bold;
-	    	font-size: 1.2em;
-			text-align: center;
-		}
-	}*/
 }

@@ -8543,61 +8543,29 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
     bottom: 0;
     right: 0; }
 
-#content.dashboard {
-  /*.fontsDash {
-		p.info {
-			padding-top: 50px;
-			padding-left: 15px;
-		    font-family: "Times New Roman";
-		    font-weight: bold;
-	    	font-size: 1.2em;
-			vertical-align: center;
-		}
-		p.change {
-			padding-left: 15px;
-		    font-family: "Times New Roman";
-		    font-weight: bold;
-	    	font-size: 1.2em;
-			vertical-align: center;
-		}
-		p.ranking {
-			// padding: 5px;
-		    font-family: "Times New Roman";
-		    font-weight: bold;
-	    	font-size: 1.2em;
-			text-align: center;
-		}
-		p.rankingFirst {
-			padding-top: 15px;
-		    font-family: "Times New Roman";
-		    font-weight: bold;
-	    	font-size: 1.4em;
-			text-align: center;
-		}
-		p.rankingSecond {
-			padding-top: 10px;
-		    font-family: "Times New Roman";
-		    font-weight: bold;
-	    	font-size: 1.2em;
-			text-align: center;
-		}
-	}*/ }
-  #content.dashboard section {
-    border: 3px solid #3A747F;
-    margin: 15px 0px;
-    background-color: #EDF7FF; }
-    #content.dashboard section h2 {
-      font-family: "commando";
-      text-align: center;
-      color: #3A747F; }
-    #content.dashboard section#profile h3 {
-      font-family: "commando";
-      text-align: center;
-      color: #52C246; }
-    #content.dashboard section#profile img {
-      width: calc(100% / 3);
-      margin: 10px calc(100% / 3);
-      border-radius: 100%; }
+#content.dashboard section {
+  border: 3px solid #3A747F;
+  margin: 15px 0px;
+  background-color: #EDF7FF; }
+  #content.dashboard section h2 {
+    font-family: "commando";
+    text-align: center;
+    color: #3A747F; }
+  #content.dashboard section#profile h3 {
+    font-family: "commando";
+    text-align: center;
+    color: #52C246; }
+  #content.dashboard section#profile img {
+    width: calc(100% / 3);
+    margin: 10px calc(100% / 3);
+    border-radius: 100%; }
+  #content.dashboard section#profile div.user-info {
+    padding: 0px 50px;
+    margin-bottom: 50px; }
+    #content.dashboard section#profile div.user-info p {
+      margin: 0;
+      color: #3A747F;
+      font-size: 1.4em; }
 
 .notifications-tr {
   position: absolute !important;
