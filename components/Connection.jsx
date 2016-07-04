@@ -18,9 +18,8 @@ var Connexion = React.createClass({
 		return (
 			<Layout>
 				<div id="content" className="ConnectUser">
-					<div className="col-md-2"> </div>
-					<Connection />
-					<Registration />
+					<Connection className="col-xs-12 col-md-6"/>
+					<Registration className="col-xs-12 col-md-6"/>
 				</div>
 			</Layout>
 		);

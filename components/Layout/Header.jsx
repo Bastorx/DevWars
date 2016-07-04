@@ -8,7 +8,9 @@ var Header = React.createClass({
         return (
             <header className="header col-xs-12">
                 <nav className="col-xs-12">
-                    <Link route="home"> <h1 className="col-xs-3">DevWars</h1> </Link>
+                    <Link route="home"> 
+                        <h1 className="col-xs-3"><span>Dev</span><span>Wars</span></h1> 
+                    </Link>
                     <ul className="col-xs-8">
                         <li>
                             <span>
@@ -29,10 +31,7 @@ var Header = React.createClass({
                             </span>
                         </li>
                         <li>
-                           <span> 
-                              <span id="contact"/> 
-                              Contact 
-                            </span>
+                           <span> <span id="contact"/> Contact </span>
                         </li>
 
                         <li className="socialMedia">
@@ -44,7 +43,6 @@ var Header = React.createClass({
                         <li className="socialMedia">
                            <span id="linkedin"/>
                         </li>
-
                     </ul>
                 </nav>
             </header>

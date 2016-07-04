@@ -147,13 +147,14 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
     }
 }
 
+
 .background {
     position: fixed;
     z-index: -1;
-    background: none;
-    @media screen and (min-aspect-ratio: 1/1) {
-
-    }
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: $background-color;
+    background-image: $background-image;
     top: 0;
     bottom: 0;
     left: 0;
@@ -174,4 +175,13 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
             display: none;
         }
     }
+}
+
+.buttonSave {
+    background-color: white;
+    color:lightgrey;
+    font-size: 20px;
+    border:solid 2px lightgrey;
+    padding: 15px;
+    font-weight: bold;
 }
