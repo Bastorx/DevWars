@@ -13,7 +13,9 @@ var creationlab = React.createClass({
 				</div>
 				<div className="col-md-1"></div>
 				<GameGround />
-				<textarea type="text" className="col-md-5 codeplace" ></textarea>
+				<textarea id="codeplaceID" type="text" className="col-md-5 codeplace" >
+					
+				</textarea>
 				<div className="col-md-12 button-Lab">
 					<button className="button-perso"> Save and launch your Spaceship </button>
 				</div>
