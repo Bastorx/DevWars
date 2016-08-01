@@ -22,7 +22,7 @@ var Header = React.createClass({
                         <li>
                             <span>
                                <span id="rank"/>
-                               <Link route="dashboard"> Ranking </Link>
+                               <Link route="ranking"> Ranking </Link>
                             </span>
                         </li>
                         <li>

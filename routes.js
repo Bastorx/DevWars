@@ -22,5 +22,11 @@ module.exports = {
 		path: "/creationlab",
 		method: "get",
 		handler: require("./components/CreationLab.jsx")
+	},
+	ranking: {
+		title: "Ranking",
+		path: "/ranking",
+		method: "get",
+		handler: require("./components/Ranking.jsx")
 	}
 };
