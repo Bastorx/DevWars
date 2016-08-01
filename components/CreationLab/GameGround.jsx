@@ -90,7 +90,7 @@ var GameGround = React.createClass({
 	},
 	render: function() {
 		return (
-			<div {...this.props}>
+			<div>
 				<canvas id="PlayGround" width="500" height="500"> 
 					Texte alternatif pour les navigateurs ne supportant pas Canvas.
 				</canvas>
