@@ -64,6 +64,8 @@ app.plug(apiPlugin({
     apiUrl: process.env.API_URL
 }));
 
+app.plug(require('fluxible-plugin-cookie')());
+
 // register stores
 app.registerStore(require('./stores/RouteStore'));
 app.registerStore(require('./stores/UserStore'));

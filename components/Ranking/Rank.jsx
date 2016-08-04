@@ -15,8 +15,9 @@ var Rank = React.createClass({
     return (this.state.page === value) ? {background: "#888"} : {};
   },
 	render: function() {
+    console.log(this.props);
+    if (!this.props || !this.props.me) return null;
     var ranks = [], props = this.props;
-    console.log(this);
     switch(props.location) {
       case "state":
         ranks = _.compact(_.map(props.ranks, function(rank){

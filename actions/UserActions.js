@@ -47,10 +47,10 @@ module.exports = {
 		return context.api
 			.post("/api/users/login", {email: params.email, password: params.password})
 			.then(function(data){
-				document.cookie+= "token="+data.id+",";
-				document.cookie = "me="+JSON.stringify(data.me)+",";
+				context.setCookie("token", data.id);
+				context.setCookie("me", JSON.stringify(data.me));
 
-				context.dispatch(Actions.RECEIVE_ME, data);
-				return context.dispatch(Actions.RECEIVE_TOKEN, data);
+				context.dispatch(Actions.RECEIVE_ME, data.me);
+				return context.dispatch(Actions.RECEIVE_TOKEN, data.id);
 			})
 	}};

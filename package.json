@@ -28,6 +28,7 @@
     "fluxible": "^1.0.3",
     "fluxible-addons-react": "^0.2.0",
     "fluxible-plugin-api": "^0.1.1",
+    "fluxible-plugin-cookie": "^0.2.1",
     "fluxible-router": "^0.4.0",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",

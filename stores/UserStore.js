@@ -21,12 +21,14 @@ module.exports = createStore({
         this.token = state.token;
 				this.me = state.me
     },
-    onReceiveToken: function(data){
-    	this.token = data.id;
+    onReceiveToken: function(token){
+			console.log(token);
+    	this.token = token;
     	this.emitChange();
     },
-		onReceiveMe: function(data){
-    	this.me = data.me;
+		onReceiveMe: function(me){
+			console.log(me);
+    	this.me = me;
     	this.emitChange();
     },
     getToken: function(){
