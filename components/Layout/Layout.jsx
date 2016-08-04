@@ -7,7 +7,7 @@ var Footer = require('./Footer.jsx');
 var Layout = React.createClass({
     render: function () {
         return (
-            <div>
+            <div className="container-fluid">
             	<div className="background" />
             	<Header />
         			{this.props.children}

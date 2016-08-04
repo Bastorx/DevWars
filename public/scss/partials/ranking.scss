@@ -1,0 +1,103 @@
+#menu-ranking {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    div {
+      height: 40px;
+      margin-right: 24px;
+      background: #CCC;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:after {
+        content: "";
+        margin-right: -20px;
+        border-style: solid;
+        border-width: 40px 0 0 20px;
+        border-color: transparent transparent transparent #CCC;
+        transition: 0.5s;
+      }
+      &:before {
+        content: "";
+        margin-left: -20px;
+        border-style: solid;
+        border-width: 40px 0px 0px 20px;
+        transform: rotate(180deg);
+        border-color: transparent transparent transparent #CCC;
+        transition: 0.5s;
+      }
+      &:first-child {
+        margin-left: -15px;
+        &:before {
+          border-style: solid;
+          border-width: 0px 0px 0px 30px;
+          transform: rotate(180deg);
+          border-color: transparent transparent transparent #CCC;
+          transition: 0.5s;
+        }
+      }
+      &:hover {
+        background: #000;
+        color: #CCC;
+        &:before {
+          border-color: transparent transparent transparent #000;
+        }
+        &:after {
+          border-color: transparent transparent transparent #000;
+        }
+      }
+    }
+}
+
+#ranks {
+  list-style: none;
+  border-top: 2px solid #000;
+  li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+    &:nth-child(odd) {
+      background: #CCC;
+      color: #222;
+    }
+    &:nth-child(even) {
+      background: #222;
+      color: #CCC;
+    }
+
+    .elo {
+      text-align: center;
+    }
+  }
+}
+
+#pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .pageNumber {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    color: #CCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #CCC;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      background: #888;
+    }
+  }
+}

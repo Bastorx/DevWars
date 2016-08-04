@@ -67,6 +67,7 @@ app.plug(apiPlugin({
 // register stores
 app.registerStore(require('./stores/RouteStore'));
 app.registerStore(require('./stores/UserStore'));
+app.registerStore(require('./stores/RankStore'));
 
 //app.registerStore(ApplicationStore);
 
