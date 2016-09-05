@@ -26,7 +26,7 @@ var App = React.createClass({
 			mode: 'javascript'
 		};
 		return (
-			<div {...this.props}>
+			<div>
 				<Codemirror ref="editor"
 					value={this.state.code} 
 					onChange={this._updateCode} 

@@ -6,11 +6,11 @@ var Link = require('../Link.jsx');
 var Header = React.createClass({
     render: function () {
         return (
+          <div className="row">
             <header className="header col-xs-12">
-                
                 <nav className="col-xs-12">
-                    <Link route="home"> 
-                        <h1 className="col-xs-3"><span>Dev</span><span>Wars</span></h1> 
+                    <Link route="home">
+                        <h1 className="col-xs-3"><span>Dev</span><span>Wars</span></h1>
                     </Link>
                     <ul className="col-xs-8">
                         <li>
@@ -22,11 +22,11 @@ var Header = React.createClass({
                         <li>
                             <span>
                                <span id="rank"/>
-                               <Link route="dashboard"> Ranking </Link>
+                               <Link route="ranking"> Ranking </Link>
                             </span>
                         </li>
                         <li>
-                           <span> 
+                           <span>
                                 <span id="dashboard"/>
                                 <Link route="dashboard"> Dashboard </Link>
                             </span>
@@ -50,6 +50,7 @@ var Header = React.createClass({
                     </ul>
                 </nav>
             </header>
+          </div>
         );
     }
 });

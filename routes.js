@@ -1,3 +1,7 @@
+'use strict';
+
+var PageActions = require('./actions/PageActions');
+
 module.exports = {
 	home: {
 		title: "HomePage",
@@ -22,5 +26,12 @@ module.exports = {
 		path: "/creationlab",
 		method: "get",
 		handler: require("./components/CreationLab.jsx")
+	},
+	ranking: {
+		title: "Ranking",
+		path: "/ranking",
+		method: "get",
+		action: PageActions.loadRanks,
+		handler: require("./components/Ranking.jsx")
 	}
 };

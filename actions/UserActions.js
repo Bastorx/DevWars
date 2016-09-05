@@ -3,8 +3,8 @@
 var Actions = require('../constants/Actions');
 var NotificationSystem = require('react-notification-system');
 var style = {
-	  NotificationItem: { 
-	    DefaultStyle: { 
+	  NotificationItem: {
+	    DefaultStyle: {
 	      padding: '30px',
 	      position: "relative",
 	      color: "red",
@@ -19,7 +19,7 @@ module.exports = {
     	this._notificationSystem = this.refs.notificationSystem;
   	},
 	_addNotification: function(e) {
-	  
+
 		if (e) {
 	    	e.preventDefault();
 	  	}
@@ -60,6 +60,10 @@ module.exports = {
 			})
 			.fail(function() {
 				Notif()
+				context.setCookie("token", data.id);
+				context.setCookie("me", JSON.stringify(data.me));
+
+				context.dispatch(Actions.RECEIVE_ME, data.me);
+				return context.dispatch(Actions.RECEIVE_TOKEN, data.id);
 			})
-	}
-};
+	}};

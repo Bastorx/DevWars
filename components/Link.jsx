@@ -17,7 +17,7 @@ var Link = React.createClass({
         this.setState({ href: this._getHrefFromProps(nextProps) });
     },
     render: function () {
-        return <NavLink href={this.state.href} {...this.props}>{this.props.children}</NavLink>;
+        return <NavLink href={this.state.href}>{this.props.children}</NavLink>;
     },
     _getHrefFromProps: function (props) {
         var href = props.href || this.context.getStore('RouteStore').makeUrl(props.route, props.params, props.query);

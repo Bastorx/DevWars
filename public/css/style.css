@@ -13161,3 +13161,86 @@ THE SOFTWARE.
 
 .cm-s-zenburn .CodeMirror-focused div.CodeMirror-selected {
   background: #4f4f4f; }
+
+#menu-ranking {
+  margin-top: 100px;
+  display: flex;
+  align-items: center; }
+  #menu-ranking div {
+    height: 40px;
+    margin-right: 24px;
+    background: #CCC;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s; }
+    #menu-ranking div:after {
+      content: "";
+      margin-right: -20px;
+      border-style: solid;
+      border-width: 40px 0 0 20px;
+      border-color: transparent transparent transparent #CCC;
+      transition: 0.5s; }
+    #menu-ranking div:before {
+      content: "";
+      margin-left: -20px;
+      border-style: solid;
+      border-width: 40px 0px 0px 20px;
+      transform: rotate(180deg);
+      border-color: transparent transparent transparent #CCC;
+      transition: 0.5s; }
+    #menu-ranking div:first-child {
+      margin-left: -15px; }
+      #menu-ranking div:first-child:before {
+        border-style: solid;
+        border-width: 0px 0px 0px 30px;
+        transform: rotate(180deg);
+        border-color: transparent transparent transparent #CCC;
+        transition: 0.5s; }
+    #menu-ranking div:hover {
+      background: #000;
+      color: #CCC; }
+      #menu-ranking div:hover:before {
+        border-color: transparent transparent transparent #000; }
+      #menu-ranking div:hover:after {
+        border-color: transparent transparent transparent #000; }
+
+#ranks {
+  list-style: none;
+  border-top: 2px solid #000; }
+  #ranks li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 18px; }
+    #ranks li:nth-child(odd) {
+      background: #CCC;
+      color: #222; }
+    #ranks li:nth-child(even) {
+      background: #222;
+      color: #CCC; }
+    #ranks li .elo {
+      text-align: center; }
+
+#pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  #pagination .pageNumber {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    color: #CCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #CCC;
+    cursor: pointer;
+    transition: 0.5s; }
+    #pagination .pageNumber:hover {
+      background: #888; }
