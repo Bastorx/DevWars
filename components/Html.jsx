@@ -30,7 +30,7 @@ var Html = React.createClass({
 					<meta httpEquiv="Content-style-type" content="text/css" />
 					<meta httpEquiv="Content-language" content="fr" />
 					<meta name="title" content="DevWars" />
-					<meta name="author" content="Bastien CHEVALLIER / Adrien ALEXANDRE / Romain COURGEY" />
+					<meta name="author" content="Bastien CHEVALLIER / Romain COURGEY et avec l'aide de Steven BOEHM" />
 					<meta name="description" content="DevWars s'inspire du jeu FightCode.com tout en s'en éloignant. En effet il a beaucoup de spécificité, le jeu n'est pas limité en 1v1 ainsi 2 équipes de développeurs peuvent programmer leurs IAs et s'affronter dans un combat épique !
 D'autre part DevWars s'inspire de certains codes du monde RPG avec notamment un système de classe. Ainsi une entité peut soigner un allié, ou attaquer ses ennemis selon sa classe.
 Il faut donc repenser son IA dans certains cas. L'univers DevWars est futuriste et s'inspire de la culture geek. Il existera au moins 2 classements, un classement 1 vs 1, un classement Team visible par pays/continent/monde.
@@ -43,6 +43,7 @@ Nous comptons faire de ce classement une référence pour le recrutement. Pour l
                 	<link href="/components/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet" type="text/css" />
 				</head>
 				<body>
+					<div className="background" />
 					<div id="app" dangerouslySetInnerHTML={{__html: this.props.markup}} />
                 	<div className="oldBrowser" dangerouslySetInnerHTML={{__html: oldBrowserHtml}} />
 

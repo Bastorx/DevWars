@@ -6,5 +6,9 @@ var define = function (constants) {
 module.exports = define([
     'NAVIGATE_START',
     'NAVIGATE_SUCCESS',
-    'NAVIGATE_FAILURE'
+    'NAVIGATE_FAILURE',
+    'RECEIVE_TOKEN',
+    'DELETE_TOKEN',
+    'RECEIVE_RANKS',
+    'RECEIVE_ME'
 ]);

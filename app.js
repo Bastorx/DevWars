@@ -1,4 +1,5 @@
 var Fluxible = require('fluxible');
+var apiPlugin = require('fluxible-plugin-api');
 var _ = require('lodash');
 var provideContext = require('fluxible-addons-react/provideContext');
 var Promise = require('q');
@@ -59,8 +60,17 @@ app.plug({
     }
 });
 
+app.plug(apiPlugin({
+    apiUrl: process.env.API_URL
+}));
+
+app.plug(require('fluxible-plugin-cookie')());
+
 // register stores
 app.registerStore(require('./stores/RouteStore'));
+app.registerStore(require('./stores/UserStore'));
+app.registerStore(require('./stores/RankStore'));
+
 //app.registerStore(ApplicationStore);
 
 module.exports = app;

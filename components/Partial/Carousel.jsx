@@ -37,7 +37,7 @@ module.exports = React.createClass({
         }.bind(this));
         if (items.length == 0) items.push(<div className="item active placeholder" />);
         return (
-            <div {...this.props} className="carousel slide" data-ride="carousel" data-interval="false">
+            <div className="carousel slide" data-ride="carousel" data-interval="false">
                 <div className="carousel-inner" role="listbox">
                     {items}
                 </div>
@@ -69,15 +69,15 @@ module.exports = React.createClass({
     renderIndice: function() {
         if (!this.props.pictures || this.props.pictures.length < 2 || !this.props.indice) return null;
         return (
-        <div className="indice-control">
-            {_.map(this.props.pictures, function(picture, i) {
-                return (
-                    <a role="button" className={this.state.displayIndex == i ? "active" : ""}onClick={this.move.bind(null, i)}>
-                        <span className="arrow" />
-                    </a>
-                );
-            }, this)}
-        </div>
+            <div className="indice-control">
+                {_.map(this.props.pictures, function(picture, i) {
+                    return (
+                        <a role="button" className={this.state.displayIndex == i ? "active" : ""} onClick={this.move.bind(null, i)}>
+                            <span className="arrow" />
+                        </a>
+                    );
+                }, this)}
+            </div>
         );
     },
     previous: function(e) {

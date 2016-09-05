@@ -47,7 +47,7 @@ server.use(function(req, res, next) {
                 context: context.getComponentContext()
             }));
 
-            var html = '<!doctype html>'+React.renderToStaticMarkup(React.createFactory(Html)({
+            var html = '<!doctype html>'+ReactDOMServer.renderToStaticMarkup(React.createFactory(Html)({
                 context : context.getComponentContext(),
                 state   : app.dehydrate(context),
                 markup  : markup

@@ -6,8 +6,11 @@ var Link = require('../Link.jsx');
 var Footer = React.createClass({
     render: function () {
         return (
-            <footer className="footer">
+          <div className="row">
+            <footer className="">
+
             </footer>
+          </div>
         );
     }
 });

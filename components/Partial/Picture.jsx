@@ -6,9 +6,9 @@ var _ = require('lodash');
 module.exports = React.createClass({
     render: function () {
         if(this.props.backgroundStyle) {
-            return <img ref="image" {...this.props} style={this.getBackgroundStyle()} />
+            return <img ref="image" style={this.getBackgroundStyle()} />
         }
-        return <img ref="image" {...this.props} src={this.getSrc()} />
+        return <img ref="image" src={this.getSrc()} />
     },
     getBackgroundStyle: function() {
         return {

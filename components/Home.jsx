@@ -6,7 +6,7 @@ var Carousel = require('./Partial/Carousel.jsx');
 
 var pictures = [
 	{
-		url: "/images/banner/1.png",
+		url: "/images/banner/3.jpg",
 		title: "Equipe",
 		description: "La DevWarsadasdasd compétition continue ! Cette semaine le combat en équipe sont mis en avant ! Alors GO GO GO !"
 	},
@@ -22,7 +22,7 @@ var Home = React.createClass({
 		return (
 			<Layout>
 				<div id="content" className="home">
-					<Carousel pictures={pictures} gallery={true} style={{with: '100vw', height: '500px'}}/>
+					<Carousel pictures={pictures} gallery={true} />
 				</div>
 			</Layout>
 		);
