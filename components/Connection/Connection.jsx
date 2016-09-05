@@ -11,6 +11,20 @@ var Connexion = React.createClass({
 	contextTypes: {
 		executeAction: React.PropTypes.func
 	},
+	getInitialState: function() {
+		return {
+			color: "blue"
+		};
+	},
+	componentDidMount: function() {
+		setInterval(function() {
+			console.log("test");
+			if (this.state.color == "blue")
+				this.setState({color: "red"});
+			else
+				this.setState({color: "blue"});
+		}.bind(this), 2000)
+	},
 	onReceiveProps: function (nP) {
 		console.log(nP);
 	},
@@ -19,7 +33,7 @@ var Connexion = React.createClass({
 			<div ref="connection" className="col-md-4 connexion active" onClick={this.focalisation}>
 				<div className="connexion-content col-md-12">
 					<div className="title col-md-12">
-						<span className="titleText">Login</span>
+						<span className="titleText" style={{color: this.state.color}}>Login</span>
 					</div>
 					<div className="connexion-fields col-md-12">
 						<input type="text" ref="email" placeholder="Your Email" className="col-md-12"/>
