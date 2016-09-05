@@ -37,6 +37,11 @@ module.exports = {
 					.post("/api/users/login", {email: data.email, password: params.password})
 			})
 			.then(function(data){
+				var date = new Date();
+				date.setTime(date.getTime()+(7*24*60*60*1000));
+				var expires = "; expires="+date.toGMTString();
+				document.cookie = "SessionCookie="+data.id+expires+"; path=/";
+				console.log(data.id);
 				return context.dispatch(Actions.RECEIVE_TOKEN, data);
 			}).fail(function() {
 				this._addNotification();
@@ -46,7 +51,15 @@ module.exports = {
 		return context.api
 			.post("/api/users/login", {email: params.email, password: params.password})
 			.then(function(data){
+				var date = new Date();
+				date.setTime(date.getTime()+(7*24*60*60*1000));
+				var expires = "; expires="+date.toGMTString();
+				document.cookie = "SessionCookie="+data.id+expires+"; path=/";
+				console.log(data.id);
 				return context.dispatch(Actions.RECEIVE_TOKEN, data);
-			});
+			})
+			.fail(function() {
+				Notif()
+			})
 	}
 };

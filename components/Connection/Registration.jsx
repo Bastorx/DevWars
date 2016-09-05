@@ -23,10 +23,10 @@ var Connexion = React.createClass({
 		executeAction: React.PropTypes.func
 	},
 	onReceiveProps: function (nP) {
-		console.log("nP", nP);
+		console.log("coucou");
 	},
 	render: function() {
-		console.log("props:", this.props);
+		console.log("propregister:", this.props.token);
 		return (
 			<div className="col-md-4 inscription" ref="inscription" onClick={this.focalisation}>
 					<div className="inscription-content col-md-12">

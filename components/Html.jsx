@@ -1,6 +1,7 @@
 'use strict';
 
 var React = require('react');
+var Cookie = require('fluxible-plugin-cookie');
 
 var oldBrowserHtml = '<!--[if lt IE 9]> \
         <p className="browsehappy"> \
@@ -12,6 +13,7 @@ var oldBrowserHtml = '<!--[if lt IE 9]> \
 
 var Html = React.createClass({
 	render: function() {
+		this.GetCookies;
 		if (process.env['NODE_ENV'] == 'full' || process.env['NODE_ENV'] == 'production') {
 			var css = '/css/style.min.css';
 			var app = '/build/js/app.min.js';
@@ -43,6 +45,7 @@ Nous comptons faire de ce classement une référence pour le recrutement. Pour l
                 	<link href="/components/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet" type="text/css" />
 				</head>
 				<body>
+					<div className="background" />
 					<div id="app" dangerouslySetInnerHTML={{__html: this.props.markup}} />
                 	<div className="oldBrowser" dangerouslySetInnerHTML={{__html: oldBrowserHtml}} />
 
@@ -55,6 +58,22 @@ Nous comptons faire de ce classement une référence pour le recrutement. Pour l
 			</html>
 		);
 	},
+	GetCookies: function() {
+        var cookContent = document.cookie, cookEnd, i, j;
+        var sName = "SessionCookie=";
+ 
+        for (i=0, c=cookContent.length; i<c; i++) {
+                j = i + sName.length;
+                if (cookContent.substring(i, j) == sName) {
+                        cookEnd = cookContent.indexOf(";", j);
+                        if (cookEnd == -1) {
+                                cookEnd = cookContent.length;
+                        }
+                        CookieFinal = decodeURIComponent(cookContent.substring(j, cookEnd));
+                }
+        }
+        console.log(CookieFinal);
+  	},
     getStateScript: function () {
         return 'window.App = '+JSON.stringify(this.props.state)+';';
     }

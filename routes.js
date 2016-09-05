@@ -11,7 +11,7 @@ module.exports = {
 		method: "get",
 		handler: require("./components/DashBoard.jsx")
 	},
-	connexion: {
+	connection: {
 		title: "Connection Page",
 		path: "/connection",
 		method: "get",

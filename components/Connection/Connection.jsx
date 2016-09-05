@@ -2,6 +2,7 @@
 
 var React = require('react');
 var ReactDOM = require('react-dom');
+var Layout = require('../Layout/Layout.jsx');
 var UserActions = require('../../actions/UserActions');
 var connectToStores = require('fluxible-addons-react/connectToStores');
 var NotificationSystem = require('react-notification-system');
@@ -12,9 +13,10 @@ var Connexion = React.createClass({
 		executeAction: React.PropTypes.func
 	},
 	onReceiveProps: function (nP) {
-		console.log(nP);
+		console.log("coucou");
 	},
 	render: function() {
+		console.log("propconnexion:", this.props.token);
 		return (
 			<div ref="connection" className="col-md-4 connexion active" onClick={this.focalisation}>
 				<div className="connexion-content col-md-12">
@@ -44,13 +46,18 @@ var Connexion = React.createClass({
 			password:this.refs.password.value
 		});
 		this._addNotification();
-
 	},
 	focalisation: function() {
 		$(ReactDOM.findDOMNode(this.refs.connection)).addClass("active");
 		$(".inscription").removeClass("active");
 	}
 
+});
+
+Connexion = connectToStores(Connexion, ['UserStore'], function(context, props){
+	return {
+		token: context.getStore('UserStore').getToken()
+	};
 });
 
 module.exports = Connexion;
