@@ -8,5 +8,7 @@ module.exports = define([
     'NAVIGATE_SUCCESS',
     'NAVIGATE_FAILURE',
     'RECEIVE_TOKEN',
-    'DELETE_TOKEN'
+    'DELETE_TOKEN',
+    'RECEIVE_RANKS',
+    'RECEIVE_ME'
 ]);

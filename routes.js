@@ -1,3 +1,7 @@
+'use strict';
+
+var PageActions = require('./actions/PageActions');
+
 module.exports = {
 	home: {
 		title: "HomePage",
@@ -27,6 +31,7 @@ module.exports = {
 		title: "Ranking",
 		path: "/ranking",
 		method: "get",
+		action: PageActions.loadRanks,
 		handler: require("./components/Ranking.jsx")
 	}
 };
