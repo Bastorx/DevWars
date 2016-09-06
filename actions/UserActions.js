@@ -43,7 +43,7 @@ module.exports = {
 				document.cookie = "SessionCookie="+data.id+expires+"; path=/";
 				console.log(data.id);
 				return context.dispatch(Actions.RECEIVE_TOKEN, data);
-			}).fail(function() {
+			}).catch(function() {
 				this._addNotification();
 			});
 	},
@@ -58,7 +58,7 @@ module.exports = {
 				console.log(data.id);
 				return context.dispatch(Actions.RECEIVE_TOKEN, data);
 			})
-			.fail(function() {
+			.catch(function() {
 				Notif()
 				context.setCookie("token", data.id);
 				context.setCookie("me", JSON.stringify(data.me));

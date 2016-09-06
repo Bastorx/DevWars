@@ -7,8 +7,10 @@ var Footer = React.createClass({
     render: function () {
         return (
           <div className="row">
-            <footer className="">
-
+            <footer className="footer">
+            	<h3>
+            		DevWars 2016 ©
+            	</h3>
             </footer>
           </div>
         );

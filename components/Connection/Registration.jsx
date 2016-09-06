@@ -22,9 +22,6 @@ var Connexion = React.createClass({
 	contextTypes: {
 		executeAction: React.PropTypes.func
 	},
-	onReceiveProps: function (nP) {
-		console.log("coucou");
-	},
 	render: function() {
 		console.log("propregister:", this.props.token);
 		return (

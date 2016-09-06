@@ -15,15 +15,27 @@ var Connexion = React.createClass({
 		console.log(nP);
 	},
 	render: function() {
-		return (
-			<Layout>
-				<div id="content" className="ConnectUser">
-					<div className="col-md-offset-2"> </div>
-					<Connection className="col-xs-12 col-md-4"/>
-					<Registration className="col-xs-12 col-md-4"/>
-				</div>
-			</Layout>
-		);
+		if(this.props.token == undefined) {
+			return (
+				<Layout>
+					<div id="content" className="ConnectUser">
+						<div className="col-md-offset-2"> </div>
+						<Connection className="col-xs-12 col-md-4"/>
+						<Registration className="col-xs-12 col-md-4"/>
+					</div>
+				</Layout>
+			);
+		}
+		else {
+			return (
+				<Layout>
+				
+						VOus etes connectés
+				
+				</Layout>
+			);
+		}
+		
 	}
 });
 

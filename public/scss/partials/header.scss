@@ -4,8 +4,9 @@
 	z-index:10;
 	
 	nav {
-		padding: 10px 0 0px 0;
+		padding: 15px 0 0px 0;
 		h1 {
+
 			span:first-child {
 				color: $light-green;
 				font-family: 'commando';
@@ -22,11 +23,11 @@
 	    	display: inline-block;
 	    	float: left;
 	    	padding: 0px 0px 0px 20px;
-	    	margin: 0;
+	    	margin: -10px 0px 0px 0px;
 	    	
     	}
-		background-color: #252525;
-		background-image: $background-image;
+		background-color: white;
+		//background-image: $background-image;
 		display: inline-block;
 		ul {
 			float: left;
@@ -71,7 +72,7 @@
 						background: url(/images/icons/shape.png);
 						background-size: cover;
 					}
-					#contact{
+					#connection{
 						background: url(/images/icons/paper.png);
 						background-size: cover;
 
@@ -95,7 +96,7 @@
 								background: url(/images/icons/shape-color.png);
 								background-size: cover;
 							}
-							#contact{
+							#connection{
 								background: url(/images/icons/paper-color.png);
 								background-size: cover;
 							}

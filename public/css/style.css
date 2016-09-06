@@ -8376,6 +8376,10 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
   padding-top: 15px;
   padding-bottom: 15px; }
 
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
 .coverflow__container__3WgC- {
   background: none !important; }
   .coverflow__container__3WgC- .coverflow__figure__1IP2r {
@@ -8415,9 +8419,8 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
   padding: 0 !important;
   z-index: 10; }
   .header nav {
-    padding: 10px 0 0px 0;
-    background-color: #252525;
-    background-image: url("http://www.transparenttextures.com/patterns/fake-brick.png");
+    padding: 15px 0 0px 0;
+    background-color: white;
     display: inline-block; }
     .header nav h1 {
       text-align: left;
@@ -8425,7 +8428,7 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
       display: inline-block;
       float: left;
       padding: 0px 0px 0px 20px;
-      margin: 0; }
+      margin: -10px 0px 0px 0px; }
       .header nav h1 span:first-child {
         color: #98DE81;
         font-family: 'commando'; }
@@ -8471,7 +8474,7 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
         .header nav ul li span #dashboard {
           background: url(/images/icons/shape.png);
           background-size: cover; }
-        .header nav ul li span #contact {
+        .header nav ul li span #connection {
           background: url(/images/icons/paper.png);
           background-size: cover; }
         .header nav ul li span a {
@@ -8485,7 +8488,7 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
         .header nav ul li:hover span #dashboard, .header nav ul li:active span #dashboard, .header nav ul li:focus span #dashboard {
           background: url(/images/icons/shape-color.png);
           background-size: cover; }
-        .header nav ul li:hover span #contact, .header nav ul li:active span #contact, .header nav ul li:focus span #contact {
+        .header nav ul li:hover span #connection, .header nav ul li:active span #connection, .header nav ul li:focus span #connection {
           background: url(/images/icons/paper-color.png);
           background-size: cover; }
         .header nav ul li:hover span a, .header nav ul li:active span a, .header nav ul li:focus span a {
@@ -8524,14 +8527,18 @@ div, p, span, h1, h2, h3, h4, h5, h6, a {
 
 .footer {
   display: block;
-  height: 300px;
+  height: 50px;
   background-color: black; }
+  .footer h3 {
+    color: white !important;
+    text-align: center !important; }
   .footer .links-right {
     background-color: white; }
 
 #content.home div.carousel {
   width: 100%;
-  position: relative; }
+  position: relative;
+  height: 90vh; }
   #content.home div.carousel:before {
     content: "";
     display: block;

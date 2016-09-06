@@ -1,7 +1,9 @@
 #content.home {
+	
 	div.carousel {
 		width: 100%;
 		position: relative;
+		height: 90vh;
 		&:before {
 			content: "";
     		display: block;
