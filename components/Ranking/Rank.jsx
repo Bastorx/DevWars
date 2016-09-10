@@ -16,9 +16,9 @@ var Rank = React.createClass({
   },
 	render: function() {
     console.log(this.props);
-    if (!this.props || !this.props.me) return null;
+    if (!this.props) return null;
     var ranks = [], props = this.props;
-    switch(props.location) {
+    /*switch(props.location) {
       case "state":
         ranks = _.compact(_.map(props.ranks, function(rank){
           if (props.me.country === rank.user.country)
@@ -32,10 +32,11 @@ var Rank = React.createClass({
         }));
         break;
       case "world": ranks = props.ranks; break;
-    }
+    }*/
+    ranks = props.ranks;
     ranks.sort(function(a, b){return (a.elo < b.elo) ? 1 : ((a.elo > b.elo) ? -1 : 0);})
 
-    var ranksTab = [], paginationSize = 2;
+    var ranksTab = [], paginationSize = 5;
     for (var i = 0, tmp = []; i < ranks.length; i++) {
       tmp.push(ranks[i]);
       if (tmp.length === paginationSize || i === ranks.length - 1) {
