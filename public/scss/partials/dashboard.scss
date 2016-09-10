@@ -29,5 +29,70 @@
 				}
 			}
 		}
+		&#games {
+			img {
+				position: absolute;
+				z-index: 1;
+				width: calc(100% / 3);
+				padding: 0px;
+				margin: 7px calc(100% / 3);
+				border-radius: 25%;
+			}
+			section {
+				margin: 10px 20px;
+				padding: 9px 9px;
+				height: 100px;
+				border: 3px solid $white;
+			}
+			h3 {
+				font-family: "commando";
+				text-align: center;
+				color: $green;
+			}
+			div.games {
+				padding: 0px;
+				margin: 0px;
+
+			}
+			div.games-info {
+				z-index: 0;
+				padding: 0px;
+				margin: 0px;
+				p {
+					margin: 0;
+					color: $dark-blue;
+					font-size: 2.0em;
+				}
+				img {
+				padding: 0px;
+				width: calc(100% / 2);
+				margin: 7px calc(100% / 3);
+				border-radius: 0%;
+				z-index: 1;
+				padding: 0px;
+
+				}
+			}
+			div.games-info2 {
+				z-index: 0;
+				padding: 0px;
+				margin: 0px;
+				img {
+				width: calc(100% / 2);
+				padding: 0px;
+				margin: 7px calc(100% / 6);
+				border-radius: 0%;
+				z-index: 1;
+				padding: 0px;
+
+				}
+				p {
+					padding-left: 5px;
+					margin: 0;
+					color: $dark-blue;
+					font-size: 2.0em;
+				}
+			}
+		}
 	}
 }
